@@ -1,0 +1,78 @@
+﻿git 常用命令
+
+
+ls -ah 查看目录下的所有文件(包含隐藏文件)
+
+
+git init 初始化git仓库
+
+git add 文件名称   把文件添加到仓库工作区
+
+git commit -m “说明内容” 将工作区内容提交到仓库
+
+git status 查看工作区状态
+
+git diff 文件名 查看被修改的内容
+
+git log 显示从最近到最远的提交日志
+
+git log —pretty=oneline 一行显示提交日志
+
+git reset —hard HEAD^ 回退到上一个版本
+
+git reset —hard HEAD^^ 回退到上上个版本
+
+git reset —hard HEAD~5 回退到5个版本之前
+git reset —hard 版本号 可以回到该版本
+
+rm 文件名 删除文件
+
+git reflog 用来记录每一次命令
+
+cat 文件名 查看文件内容
+
+git diff HEAD — 文件名 查看工作区和版本库中最新版本的文件的区别
+
+git checkout — 文件名 将工作区的修改撤销掉
+
+git reset HEAD 文件名 将暂存区的内容撤回到工作区
+
+git rm 文件名  从版本库中删除文件
+
+git push -u origin master 第一次从本地上传版本到远程仓库
+
+git push origin master 以后就可以省略-u参数
+
+git branch 查看分支
+
+git branch <name> 创建分支
+
+git checkout <name> 切换分支
+
+git checkout -b <name> 创建分支并切换到当前分支
+
+git merge <name> 合并分支到当前分支
+
+git branch -d <name> 删除分支
+
+git log —graph —pretty=oneline —abbrev-commit 显示分支合并图
+
+git merge —no-ff -m “注释” <name> 普通模式合并分支
+
+git stash 存储现场
+
+git stash list 查看存储现场列表
+
+git stash pop stash{0} 回到上个存储现场并删除该存储现场
+
+git stash apply stash{0} 回到0这个存储现场
+
+git stash drop stash{0} 删除0这个存储现场
+
+git branch -D <name> 强制删除没有合并的分支
+
+git pull 从远程仓库拉去更新
+
+git push origin master 将本地最新版本推送到远程
+
+git remote -v 查看远程版本库信息

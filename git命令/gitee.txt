@@ -1,0 +1,11 @@
+首次推送到码云
+1、远程添加源
+git remote add origin 地址
+2、拉取。。。
+git pull --rebase origin master
+3、追踪本地文件
+git add .
+4、将暂存区的保存到本地仓库
+git commit -m "备注"
+5、推送到远程
+git push -u origin master

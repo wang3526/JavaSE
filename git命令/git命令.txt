@@ -1,0 +1,56 @@
+﻿git init 初始化一个本地仓库   Git clone
+git add 文件名/.  将文件提交到暂存区
+git commit -m "备注"   将暂存区的内容提交到本地仓库
+
+git status 查看当前工作区和暂存区的文件的状态
+git diff   查看暂存区文件和工作区文件的区别
+git log    列取最近五次的提交提交
+git reflog 列出去所有的提交记录
+
+git reset --hard HEAD^  回到上个版本
+git reset --hard HEAD^^ 上上个版本
+git reset --hard HEAD~5 回到前5个版本位置
+git reset --hard HASH地址前七位 
+
+//如何
+git reset HEAD 文件名  返回上一步操作将暂存区的文件返回到工作区
+git checkout 文件名    将工作区指定的文件 返回的之前的操作
+
+rm    删除本地文件 
+git rm --cached   从仓库移除 但是本地文件还是存在
+
+//分支
+git branch      分支名称     创建一个分支
+git checkout    分支名称     切换一个分支
+git checkout -b 分支名称     创建一个分支 并且切换到这个分支
+
+git push origin 分支名称     //将新分支发布到github上
+
+git push origin :分支名称（冒号代表删除）//在github远程端删除一个分支
+或git push origin -delete 分支名称
+注意删除远程分支后，如果有对应的本地分支，本地分支并不会同步删除！
+
+//删除分支
+git merge 分支名称         合并分支  
+git branch -d 分支名称     删除一个分支
+
+//保存现场
+git stash 保存现场   未提交的文件
+git stash pop stash@{现场号}   取出现场 并删除当前现场
+git stash apply stash@{现场号} 取出现场
+git stash drop stash@｛现场号｝移除现场
+
+//远程服务
+git  push orgin 分支名称   将本地分支合并到远程分支
+git  pull  拉取服务器最新数据合并到当前仓库
+git  fetch 拉取最新的分支和更新 
+git  clone 远程地址  从远程中克隆一个仓库
+
+//远程推送
+git remote add origin 地址
+git push -u origin 分支名称
+
+
+git remote -v 查看远程库信息
+git remote rm origin 删除远程库
+git remote add origin 地址   关联远程库
