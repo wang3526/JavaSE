@@ -1,6 +1,12 @@
 package day16.arraylist;
 
-public class Person {
+import java.io.Serializable;
+
+public class Person implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 2L;
 	private String name;
 	private int age;
 	public Person(){
