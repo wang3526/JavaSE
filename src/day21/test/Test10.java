@@ -18,7 +18,7 @@ public class Test10 {
 		demo2();
 	}
 
-	private static void demo2() {
+	private static void demo2() {//获取1000的阶乘尾部有多少个0
 		BigInteger bi1=new BigInteger("1");
 		for(int i=1;i<=1000;i++){
 			BigInteger bi2=new BigInteger(i+"");

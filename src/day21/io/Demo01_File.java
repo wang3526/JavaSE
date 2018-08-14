@@ -2,7 +2,7 @@ package day21.io;
 
 import java.io.File;
 
-public class Demo1_File {
+public class Demo01_File {
 	public static void main(String[] args) {
 		//1¡¢Æ´½Ó×Ö·û´®Â·¾¶
 		String path="C:\\Users\\Administrator\\Desktop\\gitee.txt";
