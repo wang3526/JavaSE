@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<entry key="app_preset_prof_preset_name">Demo1_Frame Launch Configuration</entry>
+<entry key="app_preset_prof_preset_filter_s"/>
+<entry key="app_preset_prof_preset_filter_p">day08.*,
+day09.StudentDemo.*,
+day09.extendsdemo.*,
+day10.poly.*,
+day10.text.*,
+day11.block.*,
+day11.figure.*,
+day12.arrays.*,
+day12.scanner.*,
+day12.string.*,
+day13.demo.*,
+day13.figure.*,
+day13.interfacedemo.*,
+day13.shape.*,
+day14.enumdemo.*,
+day14.innerclass.*,
+day14.otherclass.*,
+day14.regularexpression.*,
+day15.test.*,
+day16.arraylist.*,
+day16.collection.*,
+day16.date.*,
+day16.generic.*,
+day16.list.*,
+day16.testdemo.*,
+day17.datastruct.*,
+day18.bean.*,
+day18.linkedstruct.*,
+day18.map.*,
+day18.test.*,
+day19.collection.*,
+day19.test.*,
+day20.chario.*,
+day20.file.*,
+day20.stream.*,
+day20.test.*,
+day21.io.*,
+day21.map.*,
+day21.otherio.*,
+day21.test.*,
+day22.syn.*,
+day22.thread.*,
+day23.gui.*,
+day23.io.charstream.*,
+day23.io.test.*,
+day23.thread.*,
+day23.工厂方法.*,
+day23.简单工厂.*,
+day4.center.*</entry>
+<entry key="app_preset_prof_preset_alloc_p">10</entry>
+<entry key="app_preset_"/>
+<entry key="app_preset_prof_preset_samplingRefreshRate_s">1000</entry>
+<entry key="app_preset_prof_preset_stacks_p">false</entry>
+<entry key="app_preset_prof_preset_roots_p">day08.**
+day09.StudentDemo.**
+day09.extendsdemo.**
+day10.poly.**
+day10.text.**
+day11.block.**
+day11.figure.**
+day12.arrays.**
+day12.scanner.**
+day12.string.**
+day13.demo.**
+day13.figure.**
+day13.interfacedemo.**
+day13.shape.**
+day14.enumdemo.**
+day14.innerclass.**
+day14.otherclass.**
+day14.regularexpression.**
+day15.test.**
+day16.arraylist.**
+day16.collection.**
+day16.date.**
+day16.generic.**
+day16.list.**
+day16.testdemo.**
+day17.datastruct.**
+day18.bean.**
+day18.linkedstruct.**
+day18.map.**
+day18.test.**
+day19.collection.**
+day19.test.**
+day20.chario.**
+day20.file.**
+day20.stream.**
+day20.test.**
+day21.io.**
+day21.map.**
+day21.otherio.**
+day21.test.**
+day22.syn.**
+day22.thread.**
+day23.gui.**
+day23.io.charstream.**
+day23.io.test.**
+day23.thread.**
+day23.工厂方法.**
+day23.简单工厂.**
+day4.center.**
+</entry>
+<entry key="profiler.settings.instrument.empty.methods">false</entry>
+<entry key="myeclipse.profiling.mode">0</entry>
+<entry key="profiler.settings.istrument.getter.setter.methods">false</entry>
+<entry key="app_preset_prof_preset_samplingRate_s">100</entry>
+<entry key="app_preset_prof_preset_filterMode_s">true</entry>
+<entry key="app_preset_prof_preset_selector"/>
+<entry key="app_preset_prof_preset_refreshRate_s">1000</entry>
+<entry key="app_preset_prof_preset_runnables_p">true</entry>
+<entry key="app_preset_prof_preset_memoryMode_p">true</entry>
+<entry key="app_preset_prof_preset_filterMode_p">false</entry>
+</properties>
