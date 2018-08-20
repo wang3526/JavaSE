@@ -20,7 +20,7 @@ public class Demo2_Server {
 	 * @throws IOException 
 	 * */
 	public static void main(String[] args) throws IOException {
-		//demo1();
+	//	demo1();
 		ServerSocket server=new ServerSocket(34265);
 		
 		while(true){

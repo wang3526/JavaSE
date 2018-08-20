@@ -3,6 +3,7 @@ package day26.net;
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintStream;
@@ -25,19 +26,25 @@ public class Demo1_ServerSocket {
 		Socket socket=server.accept();
 		System.out.println("客户端连接成功");
 		//3、接收客户端数据
-		BufferedReader br=new BufferedReader(new InputStreamReader(socket.getInputStream()));
+		FileInputStream fis=(FileInputStream)socket.getInputStream();
 		//向客户端发送数据
-		PrintStream ps=new PrintStream(socket.getOutputStream());
-		String line=null;
-		while((line=br.readLine())!=null){
-			System.out.println("服务器接收到的数据："+line);
+		FileOutputStream fos=(FileOutputStream)socket.getOutputStream();
+		
+		int len;
+		byte[] arr=new byte[1024];
+		while((len=fis.read(arr))!=-1){
+			System.out.println("服务器接收到的数据："+new String(arr, 0, len));
+			if(len<1024){
+				fos.write("服务器接收成功".getBytes());
+				fos.flush();
+			}
 		}
-		ps.println("服务器接收成功".getBytes());
-		br.close();
+		
+		fis.close();
 		
 		
 		
-		ps.close();
+		fos.close();
 		
 		//socket.close();
 	}
